@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+{{msg}}-----
+</div>
+
+<script src="vue.js"></script>
+
+
+<script>
+  var date = Date.now()
+  console.log(date);
+  var aaa = new Date(date)
+  console.log(aaa);
+  time = aaa.toLocaleString();
+  console.log("现在的时间是:"+time);
+
+
+  var vm = new Vue({
+    el:"#app",
+    data:{
+    msg:date,
+      // msg1:date1
+    }
+  })
+</script>
+</body>
+</html>

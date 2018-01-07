@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="app">
+  <div>
+    <!--<label for="">-->
+    <!--<input type="radio" value="male" v-model="gender">男-->
+    <!--&lt;!&ndash;</label>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<label for="">&ndash;&gt;-->
+    <!--<input type="radio" value="female" v-model="gender">女</label>-->
+    <!--<p>{{gender}}</p>-->
+
+    <!--<input type="checkbox" v-model="checked">篮球-->
+    <!--<p>选择&#45;&#45;&#45;&#45;{{checked}}</p>-->
+
+    <label for="">
+      <input type="checkbox" value="标签1" v-model="multiChecked">标签1
+    </label>
+    <label for="">
+      <input type="checkbox" value="标签2" v-model="multiChecked">标签2
+    </label>
+    <label for="">
+      <input type="checkbox" value="标签3" v-model="multiChecked">标签3
+    </label>
+    <label for="">
+      <input type="checkbox" value="标签4" v-model="multiChecked">标签4
+    </label>
+    <label for="">
+      <input type="checkbox" value="标签5" v-model="multiChecked">标签5
+    </label>
+
+<p>asahg:----{{multiChecked.join("|")}}</p>
+
+  </div>
+</div>
+
+<script src="vue.js"></script>
+<script>
+  var vm = new Vue({
+    el: "#app",
+    data: {
+      gender: "",
+      checked: "",
+      multiChecked:[]
+    }
+  })
+</script>
+</body>
+</html>
+

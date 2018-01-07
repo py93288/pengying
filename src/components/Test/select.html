@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="app">
+  <select name="" id="" v-model="selected1">
+    <option  selected>A</option>
+    <option  >b</option>
+    <option  >c</option>
+    <option  >d</option>
+
+  </select>
+  <span>选择的是:{{selected1.join("|")}}</span>
+</div>
+
+<script src="vue.js"></script>
+<script>
+  var vm = new Vue({
+    el:"#app",
+    data:{
+      selected1:[],
+    }
+  })
+</script>
+</body>
+</html>
